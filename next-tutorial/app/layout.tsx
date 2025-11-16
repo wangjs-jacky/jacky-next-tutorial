@@ -56,6 +56,9 @@ export default function RootLayout({
                   <Link href="/blog" className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent hover:border-gray-300">
                     博客
                   </Link>
+                  <Link href="/lcp-demo" className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent hover:border-gray-300">
+                    LCP 演示
+                  </Link>
                 </div>
               </div>
             </div>
