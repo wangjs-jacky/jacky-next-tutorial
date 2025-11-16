@@ -1,4 +1,4 @@
-// 路由组布局 - 路由组不会影响 URL 路径
+// Dashboard 布局 - 现在使用实际的路由路径
 export default function DashboardLayout({
   children,
 }: {
@@ -9,7 +9,7 @@ export default function DashboardLayout({
       <div className="border-b border-gray-200 dark:border-gray-700 pb-4">
         <h1 className="text-3xl font-bold">仪表盘</h1>
         <p className="text-gray-600 dark:text-gray-400 mt-2">
-          这是一个路由组示例。路由组使用括号 (dashboard) 组织路由，但不会影响 URL。
+          这是一个仪表盘示例，使用实际的路由路径 /dashboard。
         </p>
       </div>
       

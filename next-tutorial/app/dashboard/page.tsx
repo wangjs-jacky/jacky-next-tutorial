@@ -19,13 +19,11 @@ export default function DashboardPage() {
       </div>
 
       <div className="mt-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
-        <h3 className="text-lg font-semibold mb-2">路由组说明</h3>
+        <h3 className="text-lg font-semibold mb-2">路由说明</h3>
         <ul className="space-y-2 list-disc list-inside">
-          <li>路由组使用括号命名，如 <code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">(dashboard)</code></li>
-          <li>路由组不会影响 URL 路径</li>
-          <li>可以用于组织路由和共享布局</li>
-          <li>文件路径：<code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">app/(dashboard)/page.tsx</code></li>
-          <li>实际路由：<code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">/dashboard</code>（不包含括号）</li>
+          <li>文件路径：<code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">app/dashboard/page.tsx</code></li>
+          <li>实际路由：<code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">/dashboard</code></li>
+          <li>子路由：<code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">/dashboard/analytics</code> 和 <code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">/dashboard/settings</code></li>
         </ul>
       </div>
     </div>

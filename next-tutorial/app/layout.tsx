@@ -20,8 +20,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <html lang="zh-CN">
@@ -48,6 +50,9 @@ export default function RootLayout({
                   <Link href="/dashboard" className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent hover:border-gray-300">
                     仪表盘
                   </Link>
+                  <Link href="/photos" className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent hover:border-gray-300">
+                    照片库
+                  </Link>
                   <Link href="/blog" className="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent hover:border-gray-300">
                     博客
                   </Link>
@@ -59,6 +64,7 @@ export default function RootLayout({
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}
         </main>
+        {modal}
         <footer className="border-t border-gray-200 dark:border-gray-800 mt-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500">
             Next.js App Router Demo - 覆盖所有场景

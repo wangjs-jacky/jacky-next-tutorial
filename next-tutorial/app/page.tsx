@@ -77,6 +77,11 @@ export default function Home() {
           description="请求拦截和处理"
           href="/middleware-demo"
         />
+        <FeatureCard
+          title="拦截路由"
+          description="Intercepting Routes - 模态框路由"
+          href="/photos"
+        />
       </div>
 
       <div className="mt-12 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg">
